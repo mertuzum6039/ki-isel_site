@@ -62,3 +62,10 @@ h2 {
         height: 100px;
     }
 }
+/* Fotoğrafı daire şeklinde yapma */
+#profilFoto {
+    width: 200px;       /* genişlik */
+    height: 200px;      /* yükseklik */
+    border-radius: 50%; /* daire yapmak için */
+    object-fit: cover;  /* fotoğrafı kırpmadan sığdırır */
+}
