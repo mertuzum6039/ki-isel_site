@@ -152,6 +152,33 @@
     background: #3730a3;
     transform: translateY(-3px);
   }
+        .project-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  max-width: 600px;
+  margin: 30px auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.project-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 22px;
+  background: #10b981;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+  background: #059669;
+  transform: translateY(-2px);
+}
+
 </style>
 
 </head>
@@ -198,7 +225,15 @@ Bu site, yaptığım projeleri ve yeteneklerimi sergilemek için hazırlandı.
 </section>
     <section id="projeler">
   <h2>💻 Projelerim</h2>
-
+        <div class="project-card">
+  <h3>İlk Web Projem</h3>
+  <p>
+    HTML ve CSS kullanarak oluşturduğum,
+    mobil uyumlu ilk kişisel web sitem.
+  </p>
+  <a href="proje-detay.html" class="project-btn">Projeyi Gör</a>
+</div>
+        
   <div class="projeler">
     <div class="proje">
       <h3>Kişisel Web Sitem</h3>
@@ -238,6 +273,7 @@ Bu site, yaptığım projeleri ve yeteneklerimi sergilemek için hazırlandı.
 
 </body>
 </html>
+
 
 
 
