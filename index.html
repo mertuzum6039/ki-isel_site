@@ -184,6 +184,73 @@
   background: white;
   color: black;
 }
+
+.skill {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.skill p {
+  margin: 5px 0;
+}
+
+.bar {
+  background: #333;
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar div {
+  height: 100%;
+  background: #00c6ff;
+  width: 0;
+  animation: load 2s ease forwards;
+}
+
+@keyframes load {
+  from { width: 0; }
+}
+
+.proje, .project-card {
+  transition: 0.3s ease;
+}
+
+.proje:hover, .project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 198, 255, 0.4);
+}
+
+section {
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.light {
+  background: #f5f7fb;
+  color: #111;
+}
+
+.light nav {
+  background: rgba(255,255,255,0.8);
+}
+
+.light .proje,
+.light .project-card {
+  background: white;
+  color: black;
+}
+    
   </style>
 </head>
 
@@ -267,6 +334,22 @@ HTML ve CSS ile projeler geliştiriyor, kendimi her gün daha da geliştirmeye �
   <p>🔄 JavaScript Öğreniyorum</p>
   <p>🔄 Python Öğreniyorum</p>
 </section>
+
+<div class="skill">
+    <p>HTML</p>
+    <div class="bar"><div style="width: 90%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>CSS</p>
+    <div class="bar"><div style="width: 80%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>JavaScript</p>
+    <div class="bar"><div style="width: 40%"></div></div>
+  </div>
+</section>
   
 <!-- İLETİŞİM -->
 <section id="iletisim">
@@ -322,6 +405,12 @@ function yaz() {
 }
 
 yaz();
+</script>
+
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("light");
+}
 </script>
   
 </body>
