@@ -69,6 +69,14 @@
       margin: auto;
     }
 
+    #meslek {
+  text-align: center;
+  font-size: 22px;
+  color: #00c6ff;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
     /* BUTTON */
     .main-btn {
       display: inline-block;
@@ -187,6 +195,7 @@
   <a href="#anasayfa">Ana Sayfa</a>
   <a href="#hakkimda">Hakkımda</a>
   <a href="#projeler">Projeler</a>
+  <a href="#beceriler">Beceriler</a>
   <a href="#iletisim">İletişim</a>
 
   <button onclick="toggleTheme()" class="theme-btn">🌙</button>
@@ -196,12 +205,16 @@
 <section id="anasayfa">
   <img src="mert.jpg" class="profile">
 
+ 
+  
   <h1>Mert Üzüm</h1>
 
-  <p class="intro-text">
+<p id="meslek"></p>
+
+<p class="intro-text">
     Merhaba, ben Mert. Web geliştirmeye yeni başladım ve bu siteyi
     öğrendiklerimi göstermek için hazırladım.
-  </p>
+</p>
 
   <div style="text-align:center;">
     <a href="#projeler" class="main-btn">Projelerime Bak</a>
@@ -245,13 +258,30 @@ HTML ve CSS ile projeler geliştiriyor, kendimi her gün daha da geliştirmeye �
     </div>
   </div>
 </section>
+  
+<section id="beceriler">
+  <h2>Becerilerim</h2>
 
+  <p>✅ HTML</p>
+  <p>✅ CSS</p>
+  <p>🔄 JavaScript Öğreniyorum</p>
+  <p>🔄 Python Öğreniyorum</p>
+</section>
+  
 <!-- İLETİŞİM -->
 <section id="iletisim">
   <h2>İletişim</h2>
   <p style="text-align:center;">
     E-posta: mertuzum2010@gmail.com
   </p>
+  
+   <p style="text-align:center;">
+    🌐 GitHub:
+    <a href="https://github.com/mertuzum6039" target="_blank">
+      GitHub Profilim
+    </a>
+  </p>
+  
 </section>
 
 <footer>
@@ -262,6 +292,36 @@ HTML ve CSS ile projeler geliştiriyor, kendimi her gün daha da geliştirmeye �
 function toggleTheme() {
   document.body.classList.toggle("light");
 }
+</script>
+  
+<script>
+const text = "Web Geliştirici Adayı";
+let i = 0;
+
+function yaz() {
+  if (i < text.length) {
+    document.getElementById("meslek").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(yaz, 100);
+  }
+}
+
+yaz();
+</script>
+
+<script>
+const text = "Web Geliştirici Adayı";
+let i = 0;
+
+function yaz() {
+  if (i < text.length) {
+    document.getElementById("meslek").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(yaz, 100);
+  }
+}
+
+yaz();
 </script>
   
 </body>
