@@ -329,27 +329,27 @@ section {
   }
 
   .menu {
-  display: flex;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  background: #111;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 0;
-  gap: 15px;
+    display: flex;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #111;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 15px;
 
-  opacity: 0;
-  transform: translateY(-20px);
-  pointer-events: none;
-  transition: all .35s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.35s ease;
 }
 
   .menu.active {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
   .theme-btn {
