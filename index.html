@@ -184,13 +184,11 @@
       margin-top: 50px;
     }
     .theme-btn {
-  position: absolute;
-  right: 20px;
   background: #222;
   color: white;
   border: none;
   padding: 8px 12px;
-  border-radius: 10px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
@@ -314,18 +312,31 @@ section {
 
 @media (max-width: 768px) {
 
+  nav {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: auto;
+    margin: 0;
+    font-size: 20px;
+  }
+
   .menu-btn {
     display: block;
+    margin-left: auto;
   }
 
   .menu {
     display: none;
     position: absolute;
-    top: 65px;
+    top: 60px;
     left: 0;
     width: 100%;
     background: #111;
     flex-direction: column;
+    align-items: center;
     padding: 20px 0;
     gap: 15px;
   }
@@ -333,6 +344,12 @@ section {
   .menu.active {
     display: flex;
   }
+
+  .theme-btn {
+    position: static;
+    margin-top: 10px;
+  }
+}
 
 }
     
@@ -484,30 +501,7 @@ function yaz() {
 }
 
 yaz();
-</script>
 
-<script>
-const text = "Web Geliştirici Adayı";
-let i = 0;
-
-function yaz() {
-  if (i < text.length) {
-    document.getElementById("meslek").innerHTML += text.charAt(i);
-    i++;
-    setTimeout(yaz, 100);
-  }
-}
-
-yaz();
-</script>
-
-<script>
-function toggleTheme() {
-  document.body.classList.toggle("light");
-}
-</script>
-
-<script>
 function toggleTheme() {
   document.body.classList.toggle("light");
 }
