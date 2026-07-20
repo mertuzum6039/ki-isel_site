@@ -294,15 +294,24 @@ section {
 <body>
 
 <!-- NAV -->
-<nav style="margin-bottom:30px;">
-  <span class="logo">Mert Üzüm</span>
-  <a href="#anasayfa">Ana Sayfa</a>
-  <a href="#hakkimda">Hakkımda</a>
-  <a href="#projeler">Projeler</a>
-  <a href="#beceriler">Beceriler</a>
-  <a href="#iletisim">İletişim</a>
+<nav>
+  <div class="logo">Mert Üzüm</div>
 
-  <button onclick="toggleTheme()" class="theme-btn">🌙</button>
+  <button class="menu-btn" onclick="toggleMenu()">
+    ☰
+  </button>
+
+  <div class="menu" id="menu">
+    <a href="#anasayfa">Ana Sayfa</a>
+    <a href="#hakkimda">Hakkımda</a>
+    <a href="#projeler">Projeler</a>
+    <a href="#beceriler">Beceriler</a>
+    <a href="#iletisim">İletişim</a>
+
+    <button onclick="toggleTheme()" class="theme-btn">
+      🌙
+    </button>
+  </div>
 </nav>
 
 <!-- ANA SAYFA -->
